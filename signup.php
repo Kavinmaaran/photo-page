@@ -22,7 +22,7 @@ include "libs/load.php";
     <?load_template('_footer');?>
 
 
-    <script src="/app/assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="<?=get_config("base_name")?>assets/dist/js/bootstrap.bundle.min.js"></script>
 
 
 </body>

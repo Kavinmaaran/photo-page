@@ -15,7 +15,7 @@ if ($signup) {
 <main class="container">
     <div class="bg-light p-5 rounded">
         <h1>SIGNUP SUCCESS</h1>
-        <a class="btn btn-lg btn-primary" href="/my-app/login.php" role="button">Click here to LOGIN »</a>
+        <a class="btn btn-lg btn-primary" href="<?=get_config("base_name")?>login.php" role="button">Click here to LOGIN »</a>
     </div>
 </main>
 <?php

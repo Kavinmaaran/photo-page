@@ -10,10 +10,10 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Bootstrap core CSS -->
-    <link href="/my-app/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?=get_config("base_name")?>assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <?if (file_exists($_SERVER['DOCUMENT_ROOT']."my-app/css/".(basename($_SERVER['PHP_SELF'], '.php'))));{?>
     <link
-        href="/my-app/css/<?=(basename($_SERVER['PHP_SELF'], '.php'));?>.css"
+        href="<?=get_config("base_name")?>css/<?=(basename($_SERVER['PHP_SELF'], '.php'));?>.css"
         rel="stylesheet">
     <?}?>
 </head>

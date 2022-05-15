@@ -9,8 +9,9 @@ include_once 'includes/Usersession.class.php';
 global $__site_config;
 //Note: Change this path if you run this code outside lab.
 $__site_config = file_get_contents($_SERVER['DOCUMENT_ROOT'].'/../photogramconfig.json');
-
-
+// echo "hii";
+// $b = get_config("base_name");
+// echo $b;
 Session::start();
 
 function get_config($key, $default=null)
@@ -26,7 +27,7 @@ function get_config($key, $default=null)
 
 function load_template($name)
 {
-    include $_SERVER['DOCUMENT_ROOT']."/my-app/_templates/$name.php";
+    include $_SERVER['DOCUMENT_ROOT'].get_config("base_name")."_templates/$name.php";
 }
 
 function validate_credentials($username, $password)

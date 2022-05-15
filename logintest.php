@@ -2,12 +2,13 @@
 include 'libs/load.php';
 // print("_SESSION \n<br>");
 // print_r($_SESSION);
+// print_r($_GET);
 
-$user = "fooboo1";
-$pass = isset($_GET['pass']) ? $_GET['pass'] : '';
+// $user = "fooboo1";
+// $pass = isset($_GET['pass']) ? $_GET['pass'] : '';
 
-// $user = "kavin33";
-// $pass = "kavin123";
+$user = "kavin33";
+$pass = "kavin123";
 
 // $user = "fooboo1";
 // $pass = "password";
